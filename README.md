@@ -4,6 +4,11 @@ English | [简体中文](README.zh-CN.md)
 
 Firmware for an STM32F407-based end-to-end video-latency meter.
 
+![System architecture, timing principle, and test workflow](image/image-20261122175700025.png)
+
+*Figure 1. The G2G test chain. PA1 drives the LED stimulus (`t0`); the video
+path transports the event to the display; TEMT6000 detects the display rise at
+`t1`; the reported latency is `t1 - t0`.*
 ## Measurement concept: glass-to-glass video latency
 
 This project measures a **glass-to-glass (G2G)**-style video path: an optical
@@ -43,12 +48,6 @@ two grey levels; this instrument measures the complete camera-to-display path.
 - USART1 diagnostics and traditional serial control commands.
 
 ## System overview and hardware
-
-![System architecture, timing principle, and test workflow](image/image-20261122175700025.png)
-
-*Figure 1. The G2G test chain. PA1 drives the LED stimulus (`t0`); the video
-path transports the event to the display; TEMT6000 detects the display rise at
-`t1`; the reported latency is `t1 - t0`.*
 
 ![Hardware wiring overview](image/image-20261122175800645.png)
 
