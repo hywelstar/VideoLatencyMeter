@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.s text eol=lf
+
+# Preserve upstream formatting in supplied startup/HAL snapshots.
+Core/Startup/startup_stm32f407xx.s whitespace=-trailing-space
+third_party/** whitespace=-trailing-space,-space-before-tab

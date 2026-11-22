@@ -1,0 +1,42 @@
+# Generated firmware and intermediate build products
+/build/
+
+# Local development notes and planning material. The repository README is the
+# self-contained public documentation.
+/docs/
+
+# Download caches; required tools are installed outside the repository.
+/downloads/
+
+# Empty historical clone; the curated snapshot below is the only vendor source.
+/third_party/STM32CubeF4/
+
+# IDE and editor state
+/.idea/
+/.vscode/
+/.settings/
+/.clangd
+.project
+.cproject
+.mxproject
+Debug/
+Release/
+cmake-build-*/
+out/
+*.launch
+*.user
+*.userosscache
+*.suo
+*.ncb
+*.opendb
+*.bak
+*.tmp
+*.swp
+*.swo
+*~
+
+# Local logs and operating-system metadata
+*.log
+Thumbs.db
+Desktop.ini
+.DS_Store
